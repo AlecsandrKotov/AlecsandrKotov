@@ -50,6 +50,12 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#download">Скачать</a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#instrukziya">Инструкция</a>
+					</li>
+
+
+
 				</ul>
 			</div>
 		</nav>
@@ -85,15 +91,11 @@
 		<a name="prilogenie" ></a>  
 
 		<h1 class="text-white" >О приложении "Weather"</h1>
-		<p class="text-white justify">Все данные парсятся с сайта <strong>www.yandex.ru</strong>. Данные вывода сохраняются в формате CSV. Данное приложение написанно для использование в программе "vMix" для вывода погоды на экран (для интернет трансляций и др.). Приложение написанно с использованием языка Python3 и были сипользованны следующие б иблиотеки: <strong>Tkinter</strong> -  это графическая библиотека на основе Tk, <strong>Beautiful Soup 4</strong> - это парсер для синтаксического разбора файлов HTML/XML, <strong>Requests</strong> - выполняет HTTP-запросы.</p> <p class="text-white justify">Данное приложение даёт возможность получить 9 информационных значений которые можно использовать по необходимости, все зависит от задачи и вашего шаблона титров созданного в vMix. Приложение генерирует ссылку на изображение, это иконки статуса погоды (пасмурно или облачно). Иконки рассположены в папке "img" где есть еще две папки "day" и "night"(день и ночь). Смена дня и ночи наступает в 19.00. </p>
+		<p class="text-white justify">Данное приложение написанно для использование в программе "vMix" для вывода погоды на экран (для интернет трансляций и др.). Все данные парсятся с сайта <strong>www.yandex.ru</strong>. Данные вывода сохраняются в формате CSV. Приложение написанно с использованием языка Python3 и были сипользованны следующие библиотеки: <strong>Tkinter</strong> -  это графическая библиотека на основе Tk, <strong>Beautiful Soup 4</strong> - это парсер для синтаксического разбора файлов HTML/XML, <strong>Requests</strong> - выполняет HTTP-запросы.</p> <p class="text-white justify">Приложение даёт возможность получить 9 информационных значений которые можно использовать по необходимости, все зависит от задачи и вашего шаблона титров созданного в vMix. Приложение генерирует ссылку на изображение, это иконки статуса погоды (пасмурно или облачно). Иконки рассположены в папке "img" где есть еще две папки "day" и "night"(день и ночь). Смена дня и ночи наступает в 19.00. </p>
 
 		<img src="./img/programm.jpg" class="rounded mx-auto d-block mb-3 img-responsive" alt="Responsive image">
 
-		<div class="text-center img-responsive"></div>
-			<img src="./img/a2.jpg" class="img-responsive mx-auto rounded  mb-3 mr-3" alt="...">
-			<img src="./img/a1.jpg" class=" img-responsive mx-auto rounded  mb-3" alt="...">
-		
-
+		<img src="./img/a2.jpg" class="img-responsive mx-auto rounded  mb-3 mr-3" alt="...">
 
  		<a name="download"></a>
 
@@ -102,9 +104,10 @@
 			<a href="https://github.com/AlecsandrKotov/Weather/blob/master/dist/wather.7z" class="btn btn-danger btn-lg mt-3" target="_blank">Скомпилированный проект (win32-64)</a>
 
 		</div>
-
+		
 		<div class="text-center">
-			<h2 class="text-white mt-3 pt-2 center">Инструкция по использованию</h2>
+			<a name="instrukziya"></a>
+			<h2 class="text-white mt-3 pt-2 center">Инструкция по запуску и использованию</h2>
 
 			<ul class="list-group">
 				<li class="list-group-item">Скачайте скомпилированный проект (wather.7z) с сайта github.com</li>
@@ -113,10 +116,13 @@
 				<li class="list-group-item">В строку "Введите url страницы" вставте ссылку с сайта "https://yandex.ru/pogoda/xxxxx" (ваш город или регион)</li>
 				<li class="list-group-item">Нажмите кнопку "Обновить".</li>
 				<li class="list-group-item">В папке где лежал "wathe_yndex.exe" файл появится файл "weather.csv".</li>
-				<li class="list-group-item">В папке где лежал "wathe_yndex.exe" файл появится файл "weather.csv".</li>
-				<li class="list-group-item">Подключите этот файл к программе vMix через "Data Sources Mabager".</li>
-				<li class="list-group-item">Создайте шаблон титров и настройте подключение к Data Sources Mabager.</li>
+				<li class="list-group-item">Подключите этот файл к программе vMix через "Data Sources Manager".</li>
+
+				<li class="list-group-item">Создайте шаблон титров и настройте подключение к Data Sources Manager (иллюстрация ниже).</li>
 			</ul>
+			<img src="./img/vmix_data.jpg" class="img-responsive mx-auto rounded  mb-3 mr-3 mt-3" alt="...">
+
+
 
 			<div class="alert alert-danger justify mt-3 role="alert">
 				В программе имеется возможность усстановить флажок "Случайное обновление от 1 до 3 минут". Установив флажок программа будет автоматически проверять изменения погоды на сайте yandex и сохранять это в файл csv. Происходить это будет в интервале от 1 до 3 минут, выбирается случайно. Сделанно это для защиты от бана сервисом yandex. <br><br>
@@ -136,44 +142,8 @@
 		</p>
 		</div>
 
-
-		<div id="button-up">
-			<span>Наверх</span>
-		</div>
-
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	
-
-
-	<script>
-		
-$(document).ready(function(){
-			/**
-			 * При прокрутке страницы, показываем или срываем кнопку
-			 */
-			$(window).scroll(function () {
-				// Если отступ сверху больше 50px то показываем кнопку "Наверх"
-				if ($(this).scrollTop() > 50) {
-					$('#button-up').fadeIn();
-				} else {
-					$('#button-up').fadeOut();
-				}
-			});
-			
-			/** При нажатии на кнопку мы перемещаемся к началу страницы */
-			$('#button-up').click(function () {
-				$('body,html').animate({
-					scrollTop: 0
-				}, 500);
-				return false;
-			});
-			
-		});
-
-	</script>
-
-
 </body>
 </html>
