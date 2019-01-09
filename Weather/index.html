@@ -16,14 +16,43 @@
 		 text-align:center;
 		}
 
+    #button-up {
+        display:none;
+        left: 0;
+        margin: 0;
+        position: fixed;
+        bottom: 50px;
+        outline:none;
+        width: 102px;
+        color: #333333;
+        line-height: 30px;
+        text-decoration: none;
+        padding: 0px 0 0 28px;
+        background: url(./img/icon-arrow-black-up.jpg) no-repeat 7px 11px #ffffff;
+        
+        border-radius: 0 4px 4px 0;
+        -webkit-border-radius: 0 4px 4px 0;
+        -moz-border-radius: 0 4px 4px 0;
+        -o-border-radius: 0 4px 4px 0;
+        
+        box-shadow: 0 2px 4px #999;
+        -webkit-box-shadow: 0 2px 4px #999;
+        -moz-box-shadow: 0 2px 4px #999;
+        -o-box-shadow: 0 2px 4px #999;
+        cursor:pointer;
+    }		
+	
 	</style>
+
+ 
 </head>
 <body class="bg-dark">
 
 	<div class="container">
+	<a name="index"></a> 
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">"Weather"</a>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+			<a class="navbar-brand" href="#">Программа "Weather"</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -31,7 +60,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#index">Главная<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#prilogenie">О приложени</a>
@@ -72,7 +101,9 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		<a name="prilogenie"></a>
+
+		<a name="prilogenie" ></a>  
+
 		<h1 class="text-white" >О приложении "Weather"</h1>
 		<p class="text-white justify">Все данные парсятся с сайта <strong>www.yandex.ru</strong>. Данные вывода сохраняются в формате CSV. Данное приложение написанно для использование в программе "vMix" для вывода погоды на экран (для интернет трансляций и др.). Приложение написанно с использованием языка Python3 и были сипользованны следующие б иблиотеки: <strong>Tkinter</strong> -  это графическая библиотека на основе Tk, <strong>Beautiful Soup 4</strong> - это парсер для синтаксического разбора файлов HTML/XML, <strong>Requests</strong> - выполняет HTTP-запросы.</p> <p class="text-white justify">Данное приложение даёт возможность получить 9 информационных значений которые можно использовать по необходимости, все зависит от задачи и вашего шаблона титров созданного в vMix. Приложение генерирует ссылку на изображение, это иконки статуса погоды (пасмурно или облачно). Иконки рассположены в папке "img" где есть еще две папки "day" и "night"(день и ночь). Смена дня и ночи наступает в 19.00. </p>
 
@@ -84,13 +115,8 @@
 		</div>
 
 
+ 		<a name="download"></a>
 
-
-
-
-
-
-		<a name="download"></a>
 		<div class="text-center">
 			<a href="https://github.com/AlecsandrKotov/Weather" class="btn btn-primary btn-lg mt-3 mr-2" target="_blank">"Weather" проект на github.com</a>
 			<a href="https://github.com/AlecsandrKotov/Weather/blob/master/dist/wather.7z" class="btn btn-danger btn-lg mt-3" target="_blank">Скомпилированный проект (win32-64)</a>
@@ -128,11 +154,20 @@
 			По всем вопросам и предложениям пишите на почту <strong><a href="mailto:ItPython@yandex.ru">ItPython@yandex.ru</a>
 			</strong>
 		</p>
-
-
 		</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+		<div id="button-up">
+			<span>Наверх</span>
+		</div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>	
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>	
+
+
 </body>
 </html>
