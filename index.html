@@ -1,10 +1,586 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Александр Котов - страничка программиста</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.min.css">
+   <link rel="stylesheet" href="css/main.css">     
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
 </head>
+
 <body>
-	Скоро тут будет моя страничка! )
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+
+	      <div class="logo">
+	         <a href="index.html">Александр Котов</a>
+	      </div>
+
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class="menu-icon">Меню</span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class="menu-icon">Меню</span>
+         	</a>            
+
+	         <ul id="nav" class="nav">
+	            <li><a class="smoothscroll" href="#hero">Главная</a></li>
+		         <li class="current"><a class="smoothscroll" href="#portfolio">Портфолио</a></li>
+	            <li><a class="smoothscroll" href="#services">Навыки</a></li>
+	            <li><a class="smoothscroll" href="#about">О себе</a></li>
+	            <li><a class="smoothscroll" href="#contact">Контакты</a></li>
+	         </ul> <!-- end #nav -->
+
+	      </nav> <!-- end #nav-wrap -->
+
+	   </div>
+
+   </header> <!-- end header -->
+
+   <!-- homepage hero
+   ================================================== -->
+   <section id="hero">	
+   	  
+		<div class="row hero-content">
+
+			<div class="twelve columns hero-container">
+
+			   <!-- hero-slider start-->
+			   <div id="hero-slider" class="flexslider">
+
+				   <ul class="slides">
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Пишу скрипты для парсинга сайтов.
+								</h1>	
+									
+								<h3 class="">Информация сохраняется в базу данных или в файлы формата CSV, XLSX (XLS).</h3>				   
+							</div>						
+					   </li>
+
+					   <!-- slide -->
+					   <li>						
+							<div class="flex-caption">
+								<h1 class="">Разрабатываю GUI-приложения</h1>
+
+								<h3 class="">Использую фреймворки PyQT, Tkinter.</h3>			   
+							</div>					
+					   </li>
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Созданю сайты и лендинг страницы</h1>
+
+								<h3 class="">Использую фреймворк Django. Также использую системы как MODX, Joomla, WordPress </h3>			   
+							</div>
+					   </li>					              
+
+				   </ul>
+
+			   </div> <!-- end hero-slider -->				   
+
+	      </div> <!-- end twelve columns-->
+
+		</div> <!-- end row -->	
+
+		<div id="more">
+		      <a class="smoothscroll" href="#services">НАВЫКИ<i class="fa fa-angle-down"></i></a>
+		</div> 	
+
+   </section> <!-- end homepage hero -->
+
+
+   <!-- portfolio
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>ПОСЛЕДНИЕ ПРОЕКТЫ<span>.</span></h1>
+
+	         <hr />               
+
+	         <p>Тут выложены проекты которые имеют свою страницу на github.com. На странице подробно описан проект и его варианты использования, прикреплены иллюстрации и другая информация.
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row items">
+
+         <!-- portfolio-wrapper -->
+         <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half">
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-01">
+	                  <img src="images/portfolio/underwater.jpg" alt="Underwater">
+                     <div class="overlay"></div>                       
+                     <div class="portfolio-item-meta">
+     					      <h5>Приложение "Новости"</h5>
+                        <p>Парсер для vMix</p>
+     					   </div> 
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+        		</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-02">
+                     <img src="images/portfolio/hotel.jpg" alt="Hotel Sign">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Приложение "Погода"</h5>
+                           <p>Парсер для vMix</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-03">
+                     <img src="images/portfolio/beetle.jpg" alt="Beetle">                        
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Плейлисты для IPTV (провайдеры)</h5>
+                           <p>Парсер</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-04">
+                     <img src="images/portfolio/banjo-player.jpg" alt="Banjo Player">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Плейлисты для IPTV (каналы)</h5>
+                           <p>Парсер</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-05">
+                   <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Скачивание иконок (viks.tv)</h5>
+                           <p>Парсер</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-06">
+                     <img src="images/portfolio/girl.jpg" alt="Girl Stuff">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Скачивание иконок (fanat.tv)</h5>
+                           <p>Парсер</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-07">                        
+                     <img src="images/portfolio/coffee.jpg" alt="Coffee Cup">                       
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Скачивание иконок по ссылке из XML файла</h5>
+                           <p>Парсер</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+         </div> <!-- end portfolio-wrapper -->
+         
+
+         <!-- modal popup
+	   	========================================================= -->
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-underwater.jpg" alt="Underwater" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>О приложении "Новости"</h4>
+			      <p>Данное приложение парсит разделы и заголовки с сайта yandex.ru. Данную информацию можно использовать для вывода на экран через программу vMix. Приложение имеет графический интерфейс.</p>
+               <span class="categories">Python</span>
+		      </div>
+
+            <div class="link-box group">
+            	<a href="https://alecsandrkotov.github.io/News/" target="_blank">Подробнее</a>
+            	<a href="#" class="popup-modal-dismiss">Закрыть</a>         
+            </div>
+
+	      </div><!-- modal-01 end -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-hotel.jpg" alt="Hotel Sign" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>О приложении "Погода"</h4>
+			      <p>Данное приложение парсит текущий прогноз погоды с сайта yandex.ru. Данную информацию можно использовать для вывода на экран через программу vMix. Приложение имеет графический интерфейс.</p>
+               <span class="categories">Python</span>
+		      </div>
+
+            <div class="link-box">            	
+               <a href="https://alecsandrkotov.github.io/Weather/" target="_blank">Подробнее</a>
+		         <a href="#" class="popup-modal-dismiss">Закрыть</a>
+            </div>
+
+	      </div><!-- modal-02 end -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Плейлисты для IPTV (провайдеры)</h4>
+			      <p>Создание плейлистов m3u на основе имен ботов с сайта proxytv.ru</p>
+               <span class="categories">Python</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/AlecsandrKotov/IPTV_ListTv.git" target="_blank">Подробнее</a>
+		         <a href="#" class="popup-modal-dismiss">Закрыть</a>
+            </div>
+
+	      </div><!-- modal-03 end -->
+
+			<div id="modal-04" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-banjo-player.jpg" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Плейлисты для IPTV (каналы)</h4>
+			      <p>Создание плейлистов m3u на основе списка каналов. Парсится с сайта proxytv.ru</p>
+               <span class="categories">Python</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/AlecsandrKotov/IPTV_ListChanal.git" target="_blank">Подробнее</a>
+		         <a href="#" class="popup-modal-dismiss">Закрыть</a>
+            </div>
+
+	      </div><!-- modal-04 end -->
+
+	      <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+	      	<div class="media">
+	      		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+	      	</div>      	
+
+		      <div class="description-box">
+			      <h4>Парсер иконок</h4>		      
+
+			      <p>Скачивание иконок ТВ каналов с сайта http://viks.tv/</p>
+
+			      <div class="categories">Python</div>
+               
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/AlecsandrKotov/vikstv_logoTV-.git" target="_blank">Подробнее</a>
+		         <a href="#" class="popup-modal-dismiss">Закрыть</a>
+            </div>		      
+
+	      </div><!-- modal-05 end -->
+
+	      <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-girl.jpg" alt="" />
+	      	</div>	
+
+		      <div class="description-box">
+			      <h4>Парсер иконок</h4>			      
+
+			      <p>Скачивание иконок ТВ каналов с сайта http://fanat.tv/</p>
+
+			      <div class="categories">Python</div>
+               
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/AlecsandrKotov/fanattv_logoTV.git" target="_blank">Подробнее</a>
+		         <a href="#" class="popup-modal-dismiss">Закрыть</a>
+            </div>
+
+	      </div><!-- modal-06 end -->
+
+	      <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-coffee.jpg" alt="" />
+	      	</div>	
+
+		      <div class="description-box">
+			      <h4>Скачивание иконок по ссылке из XML файла</h4>			      
+
+			      <p>Парсер иконок тв каналов из файла xml на примере файла от edem.</p>
+
+			      <div class="categories">Python</div>
+               
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/AlecsandrKotov/Edem_XmlParserLogo.git" target="_blank">Подробнее</a>
+		         <a href="#" class="popup-modal-dismiss">Закрыть</a>
+            </div>
+
+	      </div><!-- modal-07 end -->
+
+      </div>  <!-- end row -->
+
+   </section> <!-- end portfolio -->
+
+   <!-- Services Section
+   ================================================== -->
+   <section id="services">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Навыки<span>.</span></h1>
+
+	         <hr />      	         
+
+	         <p>Имею навыки по созданию скриптов для парсинга. Данные парсинга вывожу в формате CSV или XLSX (XLS). Работаю с базами данных PostgreSQL, MySQL, SQLite и др. Пишу графические приложения.
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+      <div class="row mobile-no-padding">      	
+	      <div class="service-list bgrid-third s-bgrid-half tab-bgrid-whole group">
+	      	<div class="bgrid">	               
+	            <h3>Скрипты</h3>
+	            <div class="service-content">	                  
+		            <p>Пишу скрипты для сбора информации с сайтов и дальнейшего анализа цен конкурентов, сбора отзывов о конкурентах, результатов поисковой выдачи. Вся информация сохраняется или в базу данных или в файлы формата CSV, XLSX (XLS). 
+	         		</p> 
+	         	</div>  
+				  </div> <!-- end bgrid -->
+				  <div class="bgrid">	              
+	            <h3>GUI-приложения</h3>                  
+	            <div class="service-content">	                  
+		            <p>Разрабатываю небольшие приложения имеющие графический интерфейс, для более удобного и понятного использования в повседневной жизни. Использую фреймворки PyQT, Tkinter.
+	         		</p> 
+	            </div>	              
+			     </div> <!-- end bgrid -->
+          <div class="bgrid">               
+              <h3>Создание сайтов</h3>                  
+              <div class="service-content">                   
+                <p>Создаю странички и сайты. Использую фреймворк Django. Работаю с системами: MODX, Joomla, WordPress. Имеется опыт работы с программой  Adobe Muse. Использую фреймворк Bootstrap.
+              </p> 
+              </div>                
+          </div> <!-- end bgrid -->
+	      </div> <!-- end service-list -->	      
+      </div> <!-- end row --> 
+
+   </section> <!-- end services -->
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>О себе<span>.</span></h1>
+
+	         <hr />     	    
+
+	         <p>Меня зовут Александр и мне 38 лет. Живу в России в городе Москва. Более 20 лет проработал в телевизионной индустрии, работал видеооператором, видеомонтажером,  графическим дизайнером,  режиссером эфира. Увлекаться программированием начал еще в 90-х годах, писал на Visual Basic 6 небольшие утилиты. В 2010-х писал выражения  в программе After Effects для автоматизации задачи, упрощения работы и уменьшения затраченного времени. В 2015 году довольно плотно изучал HTML, CSS и такие системы как MODX, Joomla, WordPress. В 2018 году начал плотно изучать язык Python и фреймворки Django, Flask и др.
+	         </p>
+
+	      </div> <!-- end section-head -->
+
+      </div>
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="row content flex-container">
+    
+         <div id="testimonial-slider" class="flexslider">
+
+            <ul class="slides">
+               <li>
+                  <p>Образование – то, что остается после того, когда забывается все, чему учили.
+                  </p>
+
+                  <div class="testimonial-author">
+                    	<img src="images/avatars/avatar-1.jpg" alt="Author image">
+                    	<div class="author-info">
+                    		Альберт Эйнштейн
+                    		<span class="position">учёный-физик</span>
+                    	</div>
+                  </div>
+             	</li> <!-- end slide -->
+
+               <li>                       
+                  <p>Знания, за которые платят, запоминаются лучше.
+                  </p>
+                  <div class="testimonial-author">
+                    	<img src="images/avatars/avatar-2.jpg" alt="Author image">
+                    	<div class="author-info">
+                    		Рабби Нахман
+                    		<span>выдающийся праведник</span>
+                    	</div>
+                  </div>                        
+               </li> <!-- end slide -->
+
+            </ul> <!-- end slides -->
+
+         </div> <!-- end flexslider -->         
+        
+      </div> <!-- end row -->
+
+   </section> <!-- end testimonials section -->  
+
+
+   <!-- contact
+   ================================================== -->
+   <section id="contact">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Контакты<span>.</span></h1>
+
+	         <hr />	        
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row">
+      	
+
+
+         <div class="six columns tab-whole right">
+
+            <p class="lead">Связаться со мной можно написав мне  на почту <a href="mailto:ItPython@yandex.ru">ItPython@yandex.ru</a>. Буду рад любому приглашению на работу или любому коммерческому предложению. 
+
+
+            <h3>Контактный телефон:</h3>
+			   <p>Phone: 8 (977) 648 7220
+
+			   </p>
+               	
+         </div>     	
+
+      </div> <!-- end row -->     
+
+   </section>  <!-- end contact -->
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">  
+
+           
+
+         <ul class="copyright">
+         	<li>&copy;2019 Александр Котов</li> 
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero">Наверх<i class="fa fa-angle-up"></i></a>
+         </div>
+
+      </div> <!-- end row -->
+
+   </footer> <!-- end footer -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider-min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.placeholder.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>  
+   <script src="js/main.js"></script>
+
 </body>
+
 </html>
